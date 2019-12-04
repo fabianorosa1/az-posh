@@ -19,6 +19,9 @@
 
  This script requires OpenSSL and Grep utilities to be installed.
 
+#>
+
+<#
 .PARAMETER Hostname
  The target hostname
 
@@ -28,12 +31,10 @@
 .EXAMPLE 
  .\CheckSslCertExpirationDate.ps1 -Hostname www.example.com
 
-.PRE-REQUISITES
+ .PRE-REQUISITES
  OpenSSL
  Grep
-
 #>
-
 param(
     [Parameter(Mandatory=$true)]
     [String] $Hostname,
